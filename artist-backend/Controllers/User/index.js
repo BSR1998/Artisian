@@ -73,7 +73,12 @@ const userLogin = async(req,res) =>{
     
 }
 
+const userProfile = async(req,res) => {
+  return res.status(200).json({msg:"Image Stored"})
+}
+
 module.exports = {
     userRegister,
-    userLogin
+    userLogin,
+    userProfile
 }
